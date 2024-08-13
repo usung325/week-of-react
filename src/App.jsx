@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Toggle from './components/Toggle'
 import Card from './components/Card'
+import Counter from './components/Counter'
+import Login from './components/Login'
+import UserProvider from './components/UserContext'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,7 +44,6 @@ function App() {
   return (
     <>
       <div className="flex items-center justify-center w-screen">
-
         <div className="flex gap-10">
           {contentArray.map((content) => (
             <div className="hover:-translate-y-10 transition-all opacity-50 hover:opacity-100">
@@ -49,7 +51,19 @@ function App() {
             </div>
           ))}
         </div>
-        {/* <Toggle /> */}
+      </div>
+      <div className="flex items-center justify-center w-screen">
+        <div>
+          <div>
+            <Counter />
+          </div>
+
+          <UserProvider>
+            <div className="pt-10">
+              <Login />
+            </div>
+          </UserProvider>
+        </div>
       </div>
 
 
