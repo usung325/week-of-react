@@ -7,6 +7,8 @@ import Card from './components/Card'
 import Counter from './components/Counter'
 import Login from './components/Login'
 import UserProvider from './components/UserContext'
+import BlogPage from './pages/BlogPage'
+import RoutingMainPage from './pages/RoutingMainPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -43,7 +45,7 @@ function App() {
 
   return (
     <>
-      <div className="flex items-center justify-center w-screen">
+      {/* <div className="flex items-center justify-center w-screen">
         <div className="flex gap-10">
           {contentArray.map((content) => (
             <div className="hover:-translate-y-10 transition-all opacity-50 hover:opacity-100">
@@ -64,7 +66,17 @@ function App() {
             </div>
           </UserProvider>
         </div>
-      </div>
+      </div> */}
+
+
+      {/* /////////////////////////////////////////////////////////////////////////// */}
+
+
+      {/* <BlogPage /> */}
+
+      {/* /////////////////////////////////////////////////////////////////////////// */}
+
+      <RoutingMainPage />
 
 
     </>
