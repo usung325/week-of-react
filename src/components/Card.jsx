@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Card({ title, textContent, link }) {
+export default function Card({ title, textContent, link, textSecondary = '' }) {
 
 
     return (
@@ -17,6 +17,8 @@ export default function Card({ title, textContent, link }) {
                 <div className="flex flex-grow flex-col justify-between pt-2">
                     <div>
                         <p >{textContent}</p>
+                        <br></br>
+                        <p className="text-lg"> {textSecondary} </p>
                     </div>
                     <div className="flex items-center justify-center">
                         <button className="bg-purple-400 rounded-full hover:bg-purple-800 text-white"><p>Learn More</p></button>

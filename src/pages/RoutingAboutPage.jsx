@@ -6,14 +6,14 @@ export default function RoutingAboutPage() {
 
     const contentArray = [
         {
-            link: 'cat2.webp',
-            title: 'Whiskers the Cyber Guardian',
+            link: 'cat3.webp',
+            title: 'Whiskers the Pirate Guardian',
             textContent: `In a city that never slept, where the hum of technology was the heartbeat of life, a cat named Whiskers roamed. Beneath his snowy fur and keen eyes lay a mind tuned to the pulse of the digital realm.
       
           By day, Whiskers seemed just like any other cat, but as night fell, he transformed into a protector of the web, a white hacker determined to keep the virtual world safe from harm.`
         },
         {
-            link: 'cat3.webp',
+            link: 'cat2.webp',
             title: 'Shadow the Codebreaker',
             textContent: `In the dimly lit streets of the metropolis, Shadow prowled with purpose. His fur as white as snow, and eyes that gleamed with intelligence, he was a force to be reckoned with in the digital world.
       
@@ -37,7 +37,10 @@ export default function RoutingAboutPage() {
 
     return (
         <>
-            <div className="flex w-screen">
+            <div className="flex flex-col w-screen">
+                <div className="flex items-center justify-center text-2xl">
+                    <p > Meet the TEAM: </p>
+                </div>
                 <div className="flex mx-auto items-center justify-center gap-5">
                     {contentArray.map((content) => (
                         <div>
