@@ -10,6 +10,7 @@ import UserProvider from './components/UserContext'
 import BlogPage from './pages/BlogPage'
 import RoutingMainPage from './pages/RoutingMainPage'
 import Todo from './components/Todo'
+import FetchAPI from './exercises/FetchAPI'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -73,7 +74,11 @@ function App() {
       {/* /////////////////////////////////////////////////////////////////////////// */}
 
 
-      <BlogPage />
+      {/* <BlogPage /> */}
+      <div className=" pt-24">
+
+        <FetchAPI />
+      </div>
 
       {/* /////////////////////////////////////////////////////////////////////////// */}
 
